@@ -1,13 +1,17 @@
 #include <iostream>
-
-int returnSum(int num1, int num2){
-    return num1 *  num2;
-}
+#include <string>
 
 int main(){
-    int tester {12};
-    int first_num {tester + 10};
-    int sum =  returnSum(tester, first_num);
-    std::cout << first_num << tester<<"\n" <<sum;     
+    std::cerr << "this is an error message \n";
+    std::clog <<"this is a log message\n";
+    int age;
+    std::string name;
+
+    std::cout << "Please enter name and age";
+    std::getline(std::cin, name);
+    std::cin >> age;
+
+    std::cout << age << "\n name:" << name;
+
     return 0;
 }
