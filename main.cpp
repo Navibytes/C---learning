@@ -2,16 +2,21 @@
 #include <string>
 
 int main(){
-    std::cerr << "this is an error message \n";
-    std::clog <<"this is a log message\n";
-    int age;
-    std::string name;
+    int num {20};
+    switch(num){
+        case 15:{
+            std::cout << "15";
+        }
+        break;
+        case 10:{
+            std::cout << "10";
+        }
+        case 5: {
+            std::cout << "5";
+        }
+        default:{
+            std::cout << "none";
+        }
 
-    std::cout << "Please enter name and age";
-    std::getline(std::cin, name);
-    std::cin >> age;
-
-    std::cout << age << "\n name:" << name;
-
-    return 0;
+    }
 }
