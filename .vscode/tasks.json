@@ -3,7 +3,7 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "C/C++: cl.exe build active file",
+			"label": "Build with MSVC",
 			"command": "cl.exe",
 			"args": [
 				"/Zi",
